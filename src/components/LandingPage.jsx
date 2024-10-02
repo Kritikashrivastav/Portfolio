@@ -13,8 +13,15 @@ const LandingPage = () => {
       data-scroll
       data-scroll-section
       data-scroll-speed="-.3"
-      className="bg-zinc-900 w-full h-screen pt-1"
+      className="bg-zinc-900 w-full h-screen pt-1 relative"
     >
+      {/* Background image for small screens */}
+      <div
+        className="md:hidden absolute top-0 left-0 w-full h-full bg-gradient-to-r from-purple-500 to-pink-500 z-[-1]"
+
+        aria-label="Decorative gradient background for small screens"
+      ></div>
+
       <div className="textstructure mt-40 md:mt-64 flex items-center md:items-start flex-col md:flex-col gap-2 md:gap-0 md:px-20 pb-5 sm:mb-10 md:mb-32">
         {headerItems.map((item, index) => (
           <div key={index} className="masker">
@@ -29,11 +36,9 @@ const LandingPage = () => {
           </div>
         ))}
       </div>
-
-      {/* Background image for small screens */}
       <div
-        className="md:hidden w-full h-[50vw] bg-contain aspect-w-16 aspect-h-9 bg-center"
-        style={{ backgroundImage: "url('/nav.png')" }}
+        className="md:hidden mx-10  bg-no-repeat aspect-[20/30] rounded-2xl bg-contain bg-center"
+        style={{ backgroundImage: "url('/lbg.png')", opacity: 0.7 }}
         aria-label="Decorative background image for small screens"
       ></div>
 
