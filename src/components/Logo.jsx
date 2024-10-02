@@ -4,22 +4,22 @@ import { twMerge } from "tailwind-merge";
 
 export const Logo = () => {
   return (
-    <section className="flex flex-col items-center justify-start bg-white rounded-full px-1 py-4 md:px-1 md:py-4">
+    <section className="flex flex-col items-center justify-start bg-white rounded-full px-1 py-4 md:px-1 md:py-4 font-monoton">
       <LogoRolodex
         items={[
-          <LogoItem key={1} className="bg-pink-300 text-neutral-900">
+          <LogoItem key={1} className="bg-pink-300 text-neutral-900" fontSize="3em">
             K
           </LogoItem>,
-          <LogoItem key={2} className="bg-green-300 text-neutral-900">
+          <LogoItem key={2} className="bg-green-300 text-neutral-900" fontSize="3em">
             R
           </LogoItem>,
-          <LogoItem key={3} className="bg-blue-300 text-neutral-900">
+          <LogoItem key={3} className="bg-blue-300 text-neutral-900" fontSize="3em">
             I
           </LogoItem>,
-          <LogoItem key={4} className="bg-yellow-200 text-black">
+          <LogoItem key={4} className="bg-yellow-200 text-black" fontSize="3em">
             T
           </LogoItem>,
-          <LogoItem key={5} className="bg-purple-300 text-neutral-900">
+          <LogoItem key={5} className="bg-purple-300 text-neutral-900" fontSize="3em">
             I
           </LogoItem>,
         ]}
@@ -106,13 +106,14 @@ const LogoRolodex = ({ items }) => {
   );
 };
 
-const LogoItem = ({ children, className }) => {
+const LogoItem = ({ children, className, fontSize }) => {
   return (
     <div
       className={twMerge(
         "grid h-12 w-16 md:h-15 md:w-20 place-content-center rounded-full bg-neutral-700 text-5xl md:text-6xl text-neutral-50",
         className
       )}
+      style={{ fontSize: fontSize }}
     >
       {children}
     </div>

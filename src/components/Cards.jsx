@@ -5,7 +5,7 @@ const Cards = ({ title, image, description, altText }) => {
     <div className="bg-[#16423C] cards w-full h-full rounded-xl overflow-hidden transform transition-transform duration-300 ease-in-out hover:scale-105 shadow-lg hover:shadow-2xl flex flex-col">
 
       <div>
-        <h2 className='flex justify-center items-center font-merriweather bg-white py-3'>{title}</h2>
+        <h2 className='flex justify-center items-center font-syncopate bg-white py-3'>{title}</h2>
       </div>
 
       <div className="rounded-t-xl aspect-w-16 aspect-h-9 flex items-center justify-center">

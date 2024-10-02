@@ -13,7 +13,7 @@ function Marquee() {
           className='whitespace-nowrap'
           style={{ display: 'inline-block' }}
         >
-          <h1 className='text-[10vw] leading-none font-mono uppercase font-semibold inline-block'>
+          <h1 className='text-[8vw] leading-none font-syncopate uppercase font-semibold inline-block'>
             Who Needs Experience When You Have Enthusiasm?
           </h1>
 

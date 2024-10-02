@@ -10,7 +10,7 @@ function Skills() {
       <h1 className='text-5xl text-center md:text-7xl leading-none tracking-tight font-mono py-10 text-zinc-200'>Skills</h1>
       <div className=' border-t-2 border-zinc-800'>
 
-        <div className=" mx-10 md:mx-0 pt-5 md:pt-10 grid grid-cols-4 md:grid-cols-4 lg:grid-cols-3 gap-7 md:gap-10 ">
+        <div className=" mx-10 md:mx-0 pt-5 md:pt-10 grid grid-cols-4 md:grid-cols-4 lg:grid-cols-3 gap-7 md:gap-10 font-poppins">
           <div className="flex flex-col items-center">
             <FaReact size={50} className="md:size-[90px] lg:size-[90px]" color="#61DBFB" />
             <span className="text-base md:text-xl text-zinc-200">React</span>

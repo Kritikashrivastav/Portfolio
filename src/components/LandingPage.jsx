@@ -13,11 +13,11 @@ const LandingPage = () => {
       data-scroll
       data-scroll-section
       data-scroll-speed="-.3"
-      className="bg-zinc-900 w-full h-screen pt-1 relative"
+      className="bg-zinc-900 w-full h-screen pt-1 relative overflow-hidden"
     >
-      {/* Background image for small screens */}
+
       <div
-        className="md:hidden absolute top-0 left-0 w-full h-full bg-gradient-to-r from-purple-500 to-pink-500 z-[-1]"
+        className="md:hidden absolute top-0 left-0 w-full h-full bg-gradient-to-r from-purple-500 to-pink-500 z-[-1] "
 
         aria-label="Decorative gradient background for small screens"
       ></div>
@@ -26,8 +26,8 @@ const LandingPage = () => {
         {headerItems.map((item, index) => (
           <div key={index} className="masker">
             <h1
-              className={`uppercase tracking-tighter font-poppins ${index === 2
-                ? "font-mono leading-[7vw] md:leading-none font-bold text-[4vw] md:text-[2vw] md:ml-[25vw]"
+              className={`uppercase tracking-tighter font-monoton md:font-audiowide ${index === 2
+                ? " leading-[7vw] md:leading-none font-bold text-[4vw] md:text-[2vw] md:ml-[25vw]"
                 : "text-[7vw] md:text-[6vw] leading-[7vw]"
                 }`}
             >
@@ -37,7 +37,7 @@ const LandingPage = () => {
         ))}
       </div>
       <div
-        className="md:hidden mx-10  bg-no-repeat aspect-[20/30] rounded-2xl bg-contain bg-center"
+        className="md:hidden mx-10  bg-no-repeat aspect-[20/30] rounded-2xl bg-cover bg-center overflow-hidden"
         style={{ backgroundImage: "url('/lbg.png')", opacity: 0.7 }}
         aria-label="Decorative background image for small screens"
       ></div>
