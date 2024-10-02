@@ -4,21 +4,25 @@ import Cards from './Cards'; // Import the Card component
 
 const projectData = [
   {
+    title:'Portfolio Website',
     image: '/project portfolio.png',
     description: 'I’ve created my portfolio using React and Tailwind CSS, highlighting my skills and projects. Explore to see my work, learn about my coding journey, and get a feel for my design aesthetics. Your feedback would be greatly appreciated!',
     altText: 'Portfolio Project'
   },
   {
+    title:'Blog Website',
     image: '/poject blog.png',
     description: 'I’ve developed a blog website using Bootstrap, Python, and Flask, featuring full CRUD operations. This project allows users to create, read, update, and delete posts seamlessly.',
     altText: 'Blog Project'
   },
   {
+    title:'MovieZilla',
     image: '/project moviezilla.png',
     description: "I’ve built a static movie website using React, designed to display movie posters fetched from an API. While it’s currently a frontend-only project, it showcases my ability to integrate APIs and create an engaging user interface. Explore to see the movie posters and get a glimpse of my design skills!",
     altText: 'Moviezilla Project'
   },
   {
+    title:'FriendsBook',
     image: '/project tomodachi.png',
     description: "I’ve developed a friend book application where you can view a layout, add friends, and see detailed descriptions for each friend. Users can also edit friend information for a more personalized experience. While this project focuses on layout and basic functionality, it showcases my skills in UI design and user interaction.",
     altText: 'FriendsBook Project'
@@ -35,6 +39,7 @@ function Projects() {
         {projectData.map((project, index) => (
           <Cards
             key={index}
+            title={project.title}
             image={project.image}
             description={project.description}
             altText={project.altText}
