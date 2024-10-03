@@ -1,30 +1,61 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
+import { Terminal, Code, Zap } from 'lucide-react';
 
 function Hire() {
+  const [typewriterText, setTypewriterText] = useState('');
+  const fullText = "I'm a Software Developer from the future.";
+
+  useEffect(() => {
+    let index = 0;
+    const timer = setInterval(() => {
+      setTypewriterText(fullText.slice(0, index));
+      index++;
+      if (index > fullText.length) {
+        clearInterval(timer);
+      }
+    }, 100);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
-    <div className='flex justify-center'>
-      <div className='card w-[90vw] sm:w-[70vw] min-h-[50vh] max-h-[80vh] lg:max-h-none  rounded-3xl bg-white shadow-lg text-[#16423C] py-5 md:py-8 px-5 md:px-20 mt-20 -mb-10  overflow-auto'>
-        <h1 className='text-2xl font-semibold md:font-light text-center md:text-7xl leading-none tracking-tight font-syncopate pb-5 md:pb-10 pt-5'>Hire me!</h1>
+    <div className="flex justify-center items-center min-h-screen bg-zinc-900 text-green-400 font-mono">
+      <div className="w-full max-w-4xl p-8">
+        <h1 className="text-4xl md:text-6xl font-bold mb-8 text-center animate-pulse">
+          Hire Me<span className="text-white">_</span>
+        </h1>
 
-        <p className='font-mono sm:text-wrap sm:tracking-tighter text-base md:text-2xl  leading-relaxed pb-3'>
-          Hello there! a fresh-faced Software Developer🚀
-          <br />
-          I may be new to the industry, but don't let my lack of experience fool you.<br /> I come equipped with a laptop, and a collection of "how-to" YouTube videos that could rival any university library.
-          <br />
-          If you're looking for someone who can:
-          <ul className="list-disc list-inside">
-            <li>Code like nobody's watching (because I’m still learning the best practices),</li>
-            <li>Debug with the determination of a cat chasing a laser pointer,</li>
-            <li>And bring a sprinkle of enthusiasm and creativity to your team,</li>
-          </ul>
-          <br />
+        <div className="bg-gray-900 rounded-lg p-6 mb-8 border border-green-400 shadow-lg shadow-green-400/20">
+          <p className="text-xl md:text-2xl mb-4">{typewriterText}<span className="animate-blink">|</span></p>
+          <p className="text-sm md:text-base">Ready to debug the matrix and code the impossible.</p>
+        </div>
 
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+          <SkillCard icon={<Terminal className="w-8 h-8" />} title="Code Architect" description="Building digital skyscrapers with clean, efficient code" />
+          <SkillCard icon={<Code className="w-8 h-8" />} title="Bug Exterminator" description="Tracking down and eliminating bugs with extreme prejudice" />
+          <SkillCard icon={<Zap className="w-8 h-8" />} title="Tech Innovator" description="Pushing boundaries and exploring new frontiers in tech" />
+        </div>
 
-        </p>
+        <div className="text-center">
+          <a href="#contact" className="bg-green-400 text-black font-bold py-3 px-8 rounded-full hover:bg-white hover:text-green-400 transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-400">
+            Initiate Collaboration Sequence
+          </a>
+        </div>
       </div>
     </div>
-
-  )
+  );
 }
 
-export default Hire
+function SkillCard({ icon, title, description }) {
+  return (
+    <div className="bg-gray-800 p-4 rounded-lg border border-green-400 hover:shadow-md hover:shadow-green-400/50 transition duration-300">
+      <div className="flex items-center mb-2">
+        {icon}
+        <h3 className="text-lg font-semibold ml-2">{title}</h3>
+      </div>
+      <p className="text-sm text-gray-300">{description}</p>
+    </div>
+  );
+}
+
+export default Hire;

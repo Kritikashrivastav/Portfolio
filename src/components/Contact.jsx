@@ -20,7 +20,7 @@ function Contact() {
   };
 
   return (
-    <div data-scroll data-scroll-speed=".6" className="rounded-3xl mx-4 sm:mx-10 md:mx-20 lg:mx-40 p-4 md:p-10 lg:p-20 bg-zinc-100 flex items-center justify-center overflow-hidden">
+    <div id="contact" data-scroll data-scroll-speed=".6" className="rounded-3xl mx-4 sm:mx-10 md:mx-20 lg:mx-40 p-4 md:p-10 lg:p-20 bg-zinc-100 flex items-center justify-center overflow-hidden">
       <div className="container p-6 sm:p-10 md:p-16 grid grid-cols-1 lg:grid-cols-2 gap-8 py-6 rounded-3xl bg-white shadow-lg">
 
         <div className="flex items-center justify-center">
