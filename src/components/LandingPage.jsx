@@ -27,7 +27,7 @@ const LandingPage = () => {
           <div key={index} className="masker">
             <h1
               className={`uppercase tracking-tighter font-monoton md:font-audiowide ${index === 2
-                ? " leading-[7vw] md:leading-none font-bold text-[4vw] md:text-[2vw] md:ml-[25vw]"
+                ? " leading-[7vw] md:leading-none font-bold tracking-wide text-[4vw] md:text-[2vw] md:ml-[25vw]"
                 : "text-[7vw] md:text-[6vw] leading-[7vw]"
                 }`}
             >
