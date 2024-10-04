@@ -17,7 +17,7 @@ const LandingPage = () => {
     >
 
       <div
-        className="md:hidden absolute top-0 left-0 w-full h-full bg-gradient-to-r from-purple-500 to-pink-500 z-[-1] "
+        className="md:hidden absolute top-0 left-0 w-full h-full bg-gradient-to-r from-zinc-800 to-teal-950 z-[-1] "
 
         aria-label="Decorative gradient background for small screens"
       ></div>
@@ -38,7 +38,7 @@ const LandingPage = () => {
       </div>
       <div
         className="md:hidden mx-10  bg-no-repeat aspect-[20/30] rounded-2xl bg-cover bg-center overflow-hidden"
-        style={{ backgroundImage: "url('/lbg.png')", opacity: 0.7 }}
+        style={{ backgroundImage: "url('/s.jpg')", opacity: 0.5 }}
         aria-label="Decorative background image for small screens"
       ></div>
 
