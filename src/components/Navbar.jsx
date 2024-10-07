@@ -29,10 +29,10 @@ function Navbar({ scrollToSection, refs }) {
 
   const menuClasses = `
     text-lg lg:text-[1.3vw] text-center 
-    fixed top-0 left-0 h-screen md:h-full w-full md:w-2/3 text-white
+    fixed top-0 left-0 h-screen md:h-full w-full md:w-2/3 text-green-400
     md:text-zinc-500 flex flex-col gap-20 px-5 py-10
     transform transition-transform duration-300 ease-in-out
-    ${menuOpen ? 'translate-x-0 bg-white bg-opacity-0 backdrop-blur-lg backdrop-opacity-70 shadow-md' : '-translate-x-full'}
+    ${menuOpen ? 'translate-x-0 bg-black bg-opacity-0 backdrop-blur-lg backdrop-opacity-70 shadow-md' : '-translate-x-full'}
     md:transform-none md:static md:flex md:flex-row md:w-auto md:py-0 md:px-0 md:bg-transparent md:gap-10
   `;
 
