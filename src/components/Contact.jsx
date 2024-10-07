@@ -27,8 +27,8 @@ function Contact() {
           <img className="object-contain w-full h-[50vh] md:h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl" src="/contact.png" alt="Contact Us" />
         </div>
 
-        <div className="flex flex-col justify-center">
-          <h2 className="text-2xl sm:text-3xl font-lato font-bold text-gray-800 mb-4 md:mb-6">Get in Touch</h2>
+        <div className="flex flex-col justify-center font-lato">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4 md:mb-6">Get in Touch</h2>
           <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
 
             <div>
@@ -46,7 +46,7 @@ function Contact() {
             </div>
 
             <div>
-              <label htmlFor="message" className="block text-base sm:text-lg font-medium text-gray-700">Message</label>
+              <label htmlFor="message" className=" block text-base sm:text-lg font-medium text-gray-700">Message</label>
               <textarea
                 id="message"
                 name="message"
@@ -61,9 +61,10 @@ function Contact() {
             <div>
               <button
                 type="submit"
-                className="w-full bg-indigo-600 text-white font-bold py-2 sm:py-3 px-4 sm:px-6 rounded-lg shadow-lg hover:bg-indigo-500 transition duration-300 ease-in-out"
+                className="w-full borderfont-bold py-2 sm:py-3 px-4 sm:px-6 rounded-lg  text-white bg-gradient-to-r from-purple-400 via-purple-500 to-purple-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 text-base md:text-lg 
+           "
               >
-                Send Message
+                Connect
               </button>
             </div>
 
