@@ -44,7 +44,7 @@ function Hire() {
           Hire Me<span className="text-white">_</span>
         </h1>
         <div className="bg-gray-900 rounded-lg p-6 mb-8 border border-green-400 shadow-lg shadow-green-400/20">
-          <p className="text-xl md:text-2xl mb-4 h-8">{typewriterText}<span className="animate-blink">|</span></p>
+          <p className="text-xl md:text-2xl mb-4 h-20 md:h-10">{typewriterText}<span className="animate-blink">|</span></p>
           <p className="text-sm md:text-base">Ready to debug the matrix and code the impossible.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
