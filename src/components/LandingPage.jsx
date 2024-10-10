@@ -15,11 +15,10 @@ const LandingPage = () => {
         {headerItems.map((item, index) => (
           <h1
             key={index}
-            className={`font-bold font-monoton md:font-audiowide tracking-wider ${
-              index === 2
+            className={`font-light md:font-bold font-monoton md:font-audiowide tracking-wider ${index === 2
                 ? "text-sm md:text-2xl lg:text-4xl mt-2 md:ml-48 text-teal-700"
                 : "text-4xl md:text-5xl lg:text-7xl  text-zinc-200"
-            }`}
+              }`}
           >
             {item}
           </h1>
