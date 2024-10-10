@@ -43,9 +43,9 @@ const LandingPage = () => {
       ></div>
 
       {/* Footer items for medium screens and above */}
-      <div className="hidden md:flex border-t-[1px] font-lato border-zinc-800 flex-row justify-between gap-4 items-center pt-7  md:pb-10 px-10 md:px-20">
+      <div className="hidden md:flex border-t-[1px] font-griffy border-zinc-800 flex-row justify-between gap-4 items-center pt-7  md:pb-10 px-10 md:px-20">
         {footerItems.map((item, index) => (
-          <p key={index} className="md:text-[14px] lg:text-[15px] pb-10 mb-10 font-light sm:mx-2 z-50">
+          <p key={index} className="md:text-[14px] pb-10 mb-10 font-light sm:mx-2 ">
             {item}
           </p>
         ))}
